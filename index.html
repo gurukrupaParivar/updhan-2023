@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="google-site-verification" content="PdJT5N0w5Yc4wTAXewkE41mZgFcMovFmhGd3djleopw" />
+	<title> Dharmachakra Updhaan 2023 </title>
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="shortcut icon" href="images/fevicon.ico">
+	<link rel="manifest" href="images/site.webmanifest">
+
+	<!-- Font Icon -->
+	<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="main">
+     	<div class="container">
+         	<div class="register-content">
+				<div class="register-img">
+					<img src="images/Updhan-Image.jpg" alt="">
+				</div>
+				<div class="registration-form">
+					<div class="form-group">
+						<img src="images/Updhan-Image-2.jpg" alt="">
+					</div>
+				  	<form method="POST" action="#" class="register-form" id="register-form" name="register-form" onsubmit="submit.disabled = true; return true;" autocomplete="off">
+				      	<h2> મહામંગલકારી ઉપધાન નોંધણી ફોર્મ </h2>
+				      	<div class="form-group">
+							<input type="text" name="name" id="name" placeholder="name" required/>
+				      	</div>
+				      	<div class="form-group">
+				      		<input type="text" name="add1" id="add1" placeholder="Address (Optional)" />
+				      	</div>
+				      	<div class="form-row">
+							<div class="form-group">
+								<input type="text" name="village" id="village" placeholder="Village" required>
+							</div>
+							<div class="form-group">
+								<input type="text" name="taluka" id="taluka" placeholder="Tahsil" required>
+							</div>
+				      	</div>
+				      	<div class="form-row">
+							<div class="form-group">
+								<input type="text" name="district" id="district" placeholder="Districct" required>
+							</div>
+							<div class="form-group">
+								<input type="text" name="state" id="state" placeholder="State" required>
+							</div>
+				      	</div>
+				      	<div class="form-row">
+							<div class="form-group">
+								<input type="text" name="pincode" id="pincode" minlength="6" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Pin Code" required>
+							</div>
+							<div class="form-group">
+							  	<input type="text" name="age" id="age" maxlength="2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Age" required>
+							</div>
+				      	</div>
+						<div class="form-radio">
+							<label for="gender" class="radio-label">Gender :</label>
+							<div class="form-radio-item">
+								<input type="radio" name="gender" value="male" id="male">
+								<label for="male">Male</label>
+								<span class="check"></span>
+							</div>
+							<div class="form-radio-item">
+								<input type="radio" name="gender" value="female" id="female">
+								<label for="female">Female</label>
+								<span class="check"></span>
+							</div>
+				      	</div>
+					  	<div class="form-row">
+							<div class="form-group">
+								<input type="phone" name="mobile" id="mobile" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Mobile / WhatsApp Number" required />
+							</div>
+							<div class="form-group">
+								<div class="form-select">
+								   	<select name="updhaan" id="updhaan" required>
+										<option value="" disabled selected> Upadhaan </option>
+										<option value="Moksh Mala">Moksh Mala</option>
+										<option value="Patrisu (35)">Patrisu (35)</option>
+										<option value="Atthavisu (28)">Attyavisu (28)</option>
+										<option value="Adhariyu (18)">Adhariyu (18)</option>
+										<option value="Adhariyu + Chokiya + Chakiya">Adhariyu + Chokiya + Chakiya (18+4+6)</option>
+										<option value="Chokiya + Chakiya">Chokiya + Chakiya (4+6)</option>
+								   	</select>
+								   	<span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+								</div>
+							</div>
+				  	  	</div>
+				      	<div class="form-submit">
+							<input type="submit" value="નોંદણી કરો" class="submit" name="submit" id="submit"/>
+							<input type="reset" value="ફોર્મ રીસેટ કરો" class="reset" name="reset" id="reset"/>
+				      	</div>
+				  	</form>
+				</div>
+         	</div>
+     	</div>
+	</div>
+
+	<!-- JS -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
