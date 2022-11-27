@@ -258,7 +258,7 @@ body {
   padding: 20px 0; }
 
 .container {
-  width: 1400px;
+  width: 1300px;
   position: relative;
   margin: 0 auto;
   background: #f0cd4f; }
@@ -271,7 +271,8 @@ body {
 }
 
 .register-img {
-  margin-bottom: -7px; }
+  margin-bottom: -7px;
+  margin-left: 1px; }
 
 .register-form {
   padding: 50px 100px 50px 70px; }
@@ -284,6 +285,7 @@ body {
 
 .form-group {
   margin-bottom: 23px;
+  left: 1px;
   position: relative; }
     .form-group::-webkit-input-placeholder {
     font-size: 14px;
