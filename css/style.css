@@ -405,9 +405,6 @@ input[type=radio] {
   input[type=radio]:checked ~ .check::before {
     background: #000000; }
 
-.form-select {
-  position: relative; }
-
 select {
   appearance: none !important;
   -moz-appearance: none !important;

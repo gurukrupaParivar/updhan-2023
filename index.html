@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="google-site-verification" content="PdJT5N0w5Yc4wTAXewkE41mZgFcMovFmhGd3djleopw" />
-	<title> Dharmachakra Updhaan 2023 </title>
+	<title> Updhaan @ Dharmachakra Trith-2023 </title>
 
 	<!-- Favicons -->
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -36,7 +36,19 @@
 				      	<div class="form-group">
 							<input type="text" name="name" id="name" placeholder="Name" required/>
 				      	</div>
-						<div class="form-radio">
+						<div class="form-row">
+							<div class="form-group">
+								<input type="phone" name="mobile" id="mobile" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Mobile / WhatsApp Number" required />
+							</div>
+							<div class="form-group">
+								<input type="text" list="Genders" name="gender" id="gender" placeholder="Gender" required>
+								<datalist id="Genders">
+									<option value="Male">Male</option>
+									<option value="Female">Female</option>
+								</datalist>
+							</div>
+						</div>
+						<!-- <div class="form-radio">
 						<label for="gender" class="radio-label">Gender :</label>
 						<div class="form-radio-item">
 							<input type="radio" name="gender" value="Male" id="male" required>
@@ -48,7 +60,7 @@
 							<label for="female">Female</label>
 							<span class="check"></span>
 						</div>
-				      	</div>
+				      	</div> -->
 				      	<div class="form-group">
 				      		<input type="text" name="add1" id="add1" placeholder="Address (Optional)" />
 				      	</div>
@@ -114,25 +126,17 @@
 							  	<input type="text" name="age" id="age" maxlength="2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Age" required>
 							</div>
 				      	</div>
-					  	<div class="form-row">
-							<div class="form-group">
-								<input type="phone" name="mobile" id="mobile" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="Mobile / WhatsApp Number" required />
-							</div>
-							<div class="form-group">
-								<div class="form-select">
-								   	<select name="updhaan" id="updhaan" required>
-										<option value="" disabled selected> Upadhaan </option>
-										<option value="Moksh Mala">Moksh Mala</option>
-										<option value="Patrisu (35)">Patrisu (35)</option>
-										<option value="Atthavisu (28)">Attyavisu (28)</option>
-										<option value="Adhariyu (18)">Adhariyu (18)</option>
-										<option value="Adhariyu + Chokiya + Chakiya">Adhariyu + Chokiya + Chakiya (18+4+6)</option>
-										<option value="Chokiya + Chakiya">Chokiya + Chakiya (4+6)</option>
-								   	</select>
-								   	<span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-								</div>
-							</div>
-				  	  	</div>
+						<div class="form-group">
+							<input type="text" list="Updhaans" name="updhaan" id="updhaan" placeholder="Updhaan" required>
+							<datalist id="Updhaans">
+								<option value="Moksh Mala">Moksh Mala</option>
+								<option value="Patrisu(35)">Patrisu (35)</option>
+								<option value="Atthavisu(28)">Attyavisu (28)</option>
+								<option value="Adhariyu(18)">Adhariyu (18)</option>
+								<option value="Adhariyu(18) + Chokiya(4) + Chakiya(6)">Adhariyu(18) + Chokiya(4) + Chakiya(6)</option>
+								<option value="Chokiya(4) + Chakiya(6)">Chokiya(4) + Chakiya(6)</option>
+							</datalist>
+						</div>
 				      	<div class="form-submit">
 							<input type="submit" value="Register" class="submit" name="submit" id="submit"/>
 							<input type="reset" value="Reload Form" class="reset" name="reset" id="reset"/>
