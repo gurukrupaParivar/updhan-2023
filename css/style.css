@@ -415,20 +415,20 @@ select {
 #reset {
   background: #e25f72;
   color: #ffffff;
-  font-weight: 900;
+  font-weight: 600;
   margin-right: 8px; }
   #reset:hover {
     background: #c82840;
-    font-weight: 900;
+    font-weight: 600;
     color: #000000; }
 
 #submit {
   background: #7478eb;
-  font-weight: 900;
+  font-weight: 600;
   color: #ffffff; }
   #submit:hover {
     background-color: #2f3281;
-    font-weight: 900;
+    font-weight: 600;
     color: #000000; }
     #submit:disabled{
       background-color: #c82840;
